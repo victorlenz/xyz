@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.alwayzcurious.future.SignUp"
+    tools:context="com.alwayzcurious.future.Launch"
     android:background="#d6d6d6">
 
     <ImageButton
@@ -17,7 +17,7 @@
         android:layout_marginTop="31dp"
         android:id="@+id/imageButton"
         android:scaleType="fitCenter"
-        android:background="#fffff"
+        android:background="#00ffffff"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_alignParentTop="true"
@@ -45,9 +45,9 @@
         android:layout_marginTop="40dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        >
+        android:id="@+id/linearLayout">
 
-        <Button
+        <components.MyButton
             android:text="login"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -57,16 +57,17 @@
             android:layout_marginLeft="50dp"
             android:background="@drawable/button_group"
             android:textColor="#FFFFFF"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:shadowColor="#A8A8A8"
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="5"
-            android:fontFamily="sans-serif-smallcaps"
-            android:textStyle="normal|bold" />
+            android:textAllCaps="true"
+            />
 
-        <Button
+        <components.MyButton
             android:text="signup"
+            android:textAllCaps="true"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:id="@+id/button2"
@@ -79,9 +80,20 @@
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="5"
-            android:fontFamily="sans-serif-smallcaps"
             android:textStyle="normal|bold"
-            android:textSize="18sp"/>
+            android:textSize="15sp"/>
     </LinearLayout>
+
+    <components.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ALWAYZCURIOUS"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/myTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textColor="#430c006b"/>
 
 </RelativeLayout>
