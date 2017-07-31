@@ -15,21 +15,21 @@ public class MyTextView extends TextView {
     public MyTextView(Context context) {
         super(context);
         Typeface face=Typeface.createFromAsset(context.getApplicationContext()
-                .getAssets(), String.format("font/%s", "LS.otf"));
+                .getAssets(), String.format("font/%s", "Lato-Regular.ttf"));
         this.setTypeface(face);
     }
 
     public MyTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
         Typeface face=Typeface.createFromAsset(context.getApplicationContext()
-                .getAssets(), String.format("font/%s", "LS.otf"));
+                .getAssets(), String.format("font/%s", "Lato-Regular.ttf"));
         this.setTypeface(face);
     }
 
     public MyTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         Typeface face=Typeface.createFromAsset(context.getApplicationContext()
-                .getAssets(), String.format("font/%s", "LS.otf"));
+                .getAssets(), String.format("font/%s", "Lato-Regular.ttf"));
         this.setTypeface(face);
     }
 

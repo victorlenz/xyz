@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splash_bac"
-    >
+    android:background="@drawable/splash_bac">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +15,9 @@
         android:paddingRight="20dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        >
+        android:background="#fff"
+        android:layout_margin="40dp"
+        android:padding="30dp">
 
         <components.MyTextView
             android:layout_width="match_parent"
@@ -78,6 +79,13 @@
             android:backgroundTint="#dc4e41"
 
         />
+        <components.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="terms of service &amp; privacy policy"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
 
     </LinearLayout>
 
